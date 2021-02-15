@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/v1ctormoreno/tgbot_frasesrajoy/issues"
   },
-  "homepage": "https://github.com/v1ctormoreno/tgbot_frasesrajoy#readme"
+  "homepage": "https://github.com/v1ctormoreno/tgbot_frasesrajoy#readme",
+  "dependencies": {
+    "telegraf": "^4.0.3"
+  }
 }
