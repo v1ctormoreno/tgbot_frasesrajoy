@@ -1,0 +1,19 @@
+{
+  "name": "tgbot_frasesrajoy",
+  "version": "1.0.0",
+  "description": "Bot that spits famous quotes of Mariano Rajoy.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/v1ctormoreno/tgbot_frasesrajoy.git"
+  },
+  "author": "Víctor Moreno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/v1ctormoreno/tgbot_frasesrajoy/issues"
+  },
+  "homepage": "https://github.com/v1ctormoreno/tgbot_frasesrajoy#readme"
+}
