@@ -1,4 +1,9 @@
 const TelegramBot = require("node-telegram-bot-api");
+const GoogleImages = require("google-images");
+const googleImages = new GoogleImages(
+  "f2e4221f2743199b9",
+  "AIzaSyBLfiyi562xnKtoEuLP11Uel2Co5QIpvPw"
+);
 const path = require("path");
 const fs = require("fs");
 const dotenv = require("dotenv").config({ path: __dirname + "/.env" });
@@ -40,10 +45,17 @@ bot.onText(/\/start/, (msg) => {
 });
 */
 bot.onText(/\/rajoy/, (msg) => {
-  bot.sendPhoto(
+    bot.sendPhoto(
     msg.chat.id,
     "https://cronicaglobal.elespanol.com/uploads/s1/90/63/35/7/mariano-rajoy-deporte.png"
   );
+    const results =  googleImages.search("Mariano Rajoy")
+    .then();
+    const reply = !results.length ?
+      "No results" :
+      new Attachment(results[Math.floor(Math.random() * results.length)].url);
+     console.log(reply);
+
 });
 
 bot.onText(/\/vecino/, (msg) => {
