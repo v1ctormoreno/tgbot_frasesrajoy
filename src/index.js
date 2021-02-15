@@ -1,9 +1,9 @@
 const TelegramBot = require("node-telegram-bot-api");
 const GoogleImages = require("google-images");
-const googleImages = new GoogleImages(
+/*const googleImages = new GoogleImages(
   "f2e4221f2743199b9",
   "AIzaSyBLfiyi562xnKtoEuLP11Uel2Co5QIpvPw"
-);
+);*/
 const path = require("path");
 const fs = require("fs");
 const dotenv = require("dotenv").config({ path: __dirname + "/.env" });
