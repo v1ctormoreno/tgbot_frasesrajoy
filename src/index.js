@@ -29,6 +29,7 @@ bot.on("message", (msg) => {
   bot.sendMessage(chatId, "Received your message");
 });
 */
+/*
 const welcomemsg =
   "*Bienvenido al bot de Frases de Rajoy*  \n *Frases disponibles* \n `/rajoy` Devuelve una foto de rajoy`\n/vecino` Devuelve una frase de rajoy donde dice... son los vecinos los que eligen...";
 bot.onText(/\/help/, (msg) => {
@@ -37,7 +38,7 @@ bot.onText(/\/help/, (msg) => {
 bot.onText(/\/start/, (msg) => {
   bot.sendMessage(msg.chat.id, welcomemsg, { parse_mode: "markdown" });
 });
-
+*/
 bot.onText(/\/rajoy/, (msg) => {
   bot.sendPhoto(
     msg.chat.id,
